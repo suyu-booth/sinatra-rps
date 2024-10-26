@@ -6,17 +6,17 @@ get("/") do
 end
 
 get("/rock") do
-  @i=1.to_f
-  @j = rand(1..3).to_f
+  @i=1
+  @j = rand(1..3)
   erb(:rps)
 end
 get("/paper") do
-  @i=2.to_f
-  @j = rand(1..3).to_f
+  @i=2
+  @j = rand(1..3)
   erb(:rps)
 end
 get("/scissors") do
-  @i = 3.to_f
-  @j = rand(1..3).to_f
+  @i = 3
+  @j = rand(1..3)
   erb(:rps)
 end
