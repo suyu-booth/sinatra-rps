@@ -1,0 +1,27 @@
+<h2>
+  We played 
+  <% if @i==1 %>rock!
+  <% elsif @i==2 %> paper!
+  <% else%> scissor!
+  <% end %>
+</h2>
+
+<h2>
+  They played 
+  <% if @j==1 %>rock!
+  <% elsif @i==2 %> paper!
+  <% else%> scissor!
+  <% end %>
+</h2>
+
+<h2>
+  We 
+  <% if @j==@i %>tied!
+  <% elsif (@i-@j)==1 || (@i-@j)==-2 %> won!
+  <% else%> lost!
+  <% end %>
+</h2>
+
+<a href="/">
+    Rules
+  </a>
