@@ -1,27 +1,22 @@
 
 <h2>
-  We played <% if @i==1 %>rock!
-  <% elsif @i==2 %> paper!
-  <% else%> scissor!
+  <% if @i==1 %> We played rock!
+  <% elsif @i==2 %> We played paper!
+  <% else%> We played scissor!
   <% end %>
 </h2>
 
 <h2>
-  They played <% if @j==1 %>rock!
-  <% elsif @i==2 %> paper!
-  <% else%> scissor!
+  <% if @j==1 %>They played rock!
+  <% elsif @j==2 %>They played paper!
+  <% else%>They played scissor!
   <% end %>
 </h2>
 
 <h2>
-  We 
-  <% if @j==@i %> tied!
-  <% elsif @i ==1 && @j == 3%> won!
-  <% elsif @i ==1 && @j == 2%> lost!
-  <% elsif @i ==2 && @j == 1%> won!
-  <% elsif @i ==2 && @j == 3%> lost!
-  <% elsif @i ==3 && @j == 2%> won!
-  <% elsif @i ==3 && @j == 1%> lost!
+  <% if @j==@i %> We tied!
+  <% elsif (@i - @j) == 1 || (@j-@i) == 2 %> We won!
+  <% else %> We lost!
   <% end %>
 </h2>
 
