@@ -1,21 +1,21 @@
 
 <h2>
-  We played <% if @i==1 %>rock!
-  <% elsif @i==2 %> paper!
+  We played <% if @i==1.0 %>rock!
+  <% elsif @i==2.0 %> paper!
   <% else%> scissor!
   <% end %>
 </h2>
 
 <h2>
-  They played <% if @j==1 %>rock!
-  <% elsif @i==2 %> paper!
+  They played <% if @j==1.0 %>rock!
+  <% elsif @i==2.0 %> paper!
   <% else%> scissor!
   <% end %>
 </h2>
 
 <h2>
   We <% if @j==@i %>tied!
-  <% elsif (@i-@j)==1 || (@j-@i)==2 %> won!
+  <% elsif (@i-@j)==1.0 || (@i-@j)==-2.0 %> won!
   <% else%> lost!
   <% end %>
 </h2>
