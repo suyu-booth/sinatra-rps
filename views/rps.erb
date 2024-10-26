@@ -14,9 +14,14 @@
 </h2>
 
 <h2>
-  <% if @j==@i %> We tied!
-  <% elsif (@i - @j) == 1 || (@j-@i) == 2 %> We won!
-  <% else %> We lost!
+  We 
+  <% if @j==@i %> tied!
+  <% elsif @i ==1 && @j == 3%> won!
+  <% elsif @i ==1 && @j == 2%> lost!
+  <% elsif @i ==2 && @j == 1%> won!
+  <% elsif @i ==2 && @j == 3%> lost!
+  <% elsif @i ==3 && @j == 2%> won!
+  <% elsif @i ==3 && @j == 1%> lost!
   <% end %>
 </h2>
 
